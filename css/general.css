@@ -26,10 +26,18 @@ PARAGRAPH DEFAULT 1.6
 
 ----02 COLORS 
 
-Primary: #e67e22;
-- Tints: #fdf2e9 
-- Shades: #cf711f
+Primary: 
+#e67e22
+
+- Tints: 
+#fdf2e9 
+#fae5d3
+
+- Shades: 
+#cf711f
+
 - Accents:
+
 - Greys:
 #555;
 #333;
@@ -92,7 +100,9 @@ body {
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
 }
-
+.grid-center-v {
+  align-items: center;
+}
 .heading-primary,
 .heading-secondary,
 .heading-tertiary {
@@ -167,4 +177,8 @@ body {
 
 .margin-right-sm {
   margin-right: 1.6rem !important;
+}
+
+strong {
+  font-weight: 500;
 }
