@@ -33,6 +33,9 @@ Primary:
 #fdf2e9 
 #fae5d3
 
+#eb984e
+#45260a
+
 - Shades: 
 #cf711f
 
@@ -44,6 +47,7 @@ Primary:
 #333;
 
 --- 03 SHADOWS
+ 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
 
 --- 04 BORDER RADIUS
 
@@ -151,7 +155,7 @@ body {
   line-height: 1.2;
   margin-bottom: 3.2rem;
 }
-
+.btn,
 .btn:link,
 .btn:visited {
   font-size: 2rem;
@@ -160,6 +164,9 @@ body {
   text-decoration: none;
   border-radius: 9px;
   font-weight: 600;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
   transition: all 0.3s;
 }
 
@@ -186,6 +193,18 @@ body {
   background-color: #fdf2e9;
   /* border: 3px solid white; */
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
 }
 
 .link:link,
@@ -222,6 +241,12 @@ body {
   height: 3rem;
   color: #e67e22;
 }
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
+
 /* HELPER/SETTING CLASSES */
 
 .margin-right-sm {
